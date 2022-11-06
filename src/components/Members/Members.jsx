@@ -16,7 +16,7 @@ export default function Members() {
       <div className='members'>
         <div className="sticky-div">
           <p>Members</p>
-          {friendList.length===0?"Add a friend":""}
+          {friendList.length === 0 ? "Add a friend" : ""}
           {friendList.map(createMembers)}
         </div>
       </div>

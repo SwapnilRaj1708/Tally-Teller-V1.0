@@ -6,19 +6,16 @@ import { FriendSContext } from '../../contexts/FriendsContext';
 
 export default function Friends(props) {
 
-  const {friendList,setFriendList} = useContext(FriendSContext);
+  const { friendList, setFriendList } = useContext(FriendSContext);
 
   const newFriend = (name) => {
-    // console.log(name);
-    console.log(friendList);
     const share = 0;
-    const key = Math.round(Math.random()*100000000);
+    const key = Math.round(Math.random() * 100000000);
     setFriendList(prevValue => {
-      return [...prevValue, {key,name,share}];  
+      return [...prevValue, { key, name, share }];
 
     }
     )
-    console.log(friendList);
   }
 
   function createFriend(props) {

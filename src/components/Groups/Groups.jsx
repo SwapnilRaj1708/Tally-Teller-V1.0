@@ -5,13 +5,13 @@ import groupList from './GroupList';
 
 export default function Groups() {
 
-  function createGroup(props){
+  function createGroup(props) {
     return <Group key={props.id} groupName={props.groupName} />
   }
 
   return (
     <div className="groups shadow">
-        {groupList.map(createGroup)}
+      {groupList.map(createGroup)}
     </div>
   )
 }

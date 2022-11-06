@@ -30,7 +30,8 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.member div{
+
+.member div {
     display: flex;
     flex-direction: row;
     align-items: center;

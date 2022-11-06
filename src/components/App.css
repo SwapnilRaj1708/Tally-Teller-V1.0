@@ -1,10 +1,11 @@
-.display-container{
+.display-container {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
 }
-.body-container{
+
+.body-container {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;

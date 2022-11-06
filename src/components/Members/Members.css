@@ -1,6 +1,4 @@
-.members{
-    /* background-color: yellow; */
-    /* position: fixed; */
+.members {
     margin-top: 56px;
     margin-right: 90px;
     display: flex;
@@ -8,13 +6,14 @@
     flex-wrap: nowrap;
     width: 158px;
     align-items: center;
-    /* padding-top: 70px; */
 }
-.sticky-div{
+
+.sticky-div {
     position: sticky;
     top: 56px;
 }
-.members p{
+
+.members p {
     width: 100%;
     text-align: start;
     font-size: x-large;

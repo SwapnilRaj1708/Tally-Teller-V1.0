@@ -16,7 +16,6 @@ export default function Header(props) {
         const desc = document.getElementById("expense-desc").value;
         const amt = document.getElementById("expense-amt").value;
         if (desc !== "" && amt !== "") {
-            console.log(payer);
             const date = new Date();
             const month = date.getUTCMonth();
             const day = date.getDate();
@@ -50,19 +49,15 @@ export default function Header(props) {
 
             setFriendList(prevValue => {
                 return prevValue.filter((item) => {
-                    console.log(item.share)
                     if (item.name === payer) {
                         item.share = Number(item.share) + Number(([share * (friendList.length - 1)]));
-                        console.log("share = " + item.share)
                     }
                     else {
                         item.share -= [share];
                     }
-                    console.log(item.share)
                     return true;
                 })
             })
-            console.log(friendList);
             document.getElementById("expense-desc").value = "";
             document.getElementById("expense-amt").value = "";
             setIsActive(false)

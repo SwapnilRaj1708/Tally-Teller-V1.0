@@ -3,13 +3,11 @@ import "./Member.css";
 
 export default function Member(props) {
 
-    const amt=props.share;
-    console.log("amount = "+amt)
-    console.log("typeof = "+typeof(amt));
+    const amt = props.share;
     var textColor = "black"
-    if(amt === 0)
+    if (amt === 0)
         textColor = "black";
-    else if(amt>0)
+    else if (amt > 0)
         textColor = "#48be9d"
     else
         textColor = "orange";
@@ -17,7 +15,7 @@ export default function Member(props) {
         <div className='member'>
             <span className='member-name'>{props.name}</span>
             <div>
-                <span className='member-cond' style={{ color: textColor }}>{(amt === 0) ? "owes nothing" : ((amt>0)?"gets back":"owes")}</span> <span className='member-amount' style={{ color: textColor }}>{(amt === 0) ? "" :("₹"+[Math.abs(amt)])}</span>
+                <span className='member-cond' style={{ color: textColor }}>{(amt === 0) ? "owes nothing" : ((amt > 0) ? "gets back" : "owes")}</span> <span className='member-amount' style={{ color: textColor }}>{(amt === 0) ? "" : ("₹" + [Math.abs(amt)])}</span>
             </div>
         </div>
     )

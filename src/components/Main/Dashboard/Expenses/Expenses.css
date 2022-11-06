@@ -29,7 +29,8 @@
     font-weight: 300;
     width: 100%;
 }
-.datestamp .date{
+
+.datestamp .date {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -38,6 +39,7 @@
     font-weight: 400;
     width: 100%;
 }
+
 .expense-name {
     height: inherit;
     display: flex;
@@ -49,7 +51,8 @@
     padding: 0 10px;
     font-weight: 700;
 }
-.expense-name span{
+
+.expense-name span {
     white-space: nowrap;
     width: 240px;
     overflow: hidden;
@@ -77,11 +80,13 @@
     justify-content: flex-end;
     gap: 3px;
 }
-.payer-detail .amount{
+
+.payer-detail .amount {
     font-weight: 700;
     color: black;
 }
-.payer-detail .name :nth-child(1){
+
+.payer-detail .name :nth-child(1) {
     white-space: nowrap;
     /* width: 300px; */
     overflow: hidden;
@@ -110,12 +115,15 @@
     justify-content: flex-start;
     white-space: nowrap;
 }
-.your-share .amount{
+
+.your-share .amount {
     font-weight: 700;
 }
-.profit{
+
+.profit {
     color: rgb(47, 255, 71);
 }
-.loss{
+
+.loss {
     color: orange;
 }

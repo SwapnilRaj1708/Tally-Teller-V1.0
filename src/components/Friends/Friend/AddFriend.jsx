@@ -11,7 +11,8 @@ export default function AddFriend(props) {
         // console.log(input.value)
         if ((input.value) !== "") {
             props.newFriend(input.value);
-        setIsActive(false);
+            input.value = "";
+            setIsActive(false);
         }
     }
 

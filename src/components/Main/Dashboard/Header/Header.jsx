@@ -94,7 +94,6 @@ export default function Header(props) {
                         </div>
                         <div className='centered'>
                             <select id="payer" defaultValue={1} className="form-select" aria-label="Default select example">
-                                <option value="default">Select payer</option>
                                 {friendList.map(createPayer)}
                             </select>
                         </div>

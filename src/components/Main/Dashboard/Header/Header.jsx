@@ -10,61 +10,63 @@ export default function Header(props) {
     const [isActive, setIsActive] = useState(false);
 
     function handleSubmit() {
-        
+
         var select = document.getElementById('payer');
         var payer = select.options[select.selectedIndex].text;
-        console.log(payer);
         const desc = document.getElementById("expense-desc").value;
-        const date = new Date();
-        const month = date.getUTCMonth();
-        const day = date.getDate();
-        let monthEng = "JAN"
-        switch (month) {
-            case 0: monthEng = "JAN"; break;
-            case 1: monthEng = "FEB"; break;
-            case 2: monthEng = "MAR"; break;
-            case 3: monthEng = "APR"; break;
-            case 4: monthEng = "MAY"; break;
-            case 5: monthEng = "JUN"; break;
-            case 6: monthEng = "JUL"; break;
-            case 7: monthEng = "AUG"; break;
-            case 8: monthEng = "SEPT"; break;
-            case 9: monthEng = "OCT"; break;
-            case 10: monthEng = "NOV"; break;
-            case 11: monthEng = "DEC"; break;
-            default: monthEng = "JAN"; break;
-        }
         const amt = document.getElementById("expense-amt").value;
-        const share = (amt / friendList.length).toFixed(2);
-        const obj = {
-            id: Math.round(Math.random() * 10000000),
-            expenseName: desc,
-            payer: payer,
-            payerAmount: amt,
-            share: payer !== "Swapnil" ? (-share) : (share * (friendList.length - 1)),
-            dateMonth: monthEng,
-            dateDate: day
-        }
-        props.addition(obj);
+        if (desc !== "" && amt !== "") {
+            console.log(payer);
+            const date = new Date();
+            const month = date.getUTCMonth();
+            const day = date.getDate();
+            let monthEng = "JAN"
+            switch (month) {
+                case 0: monthEng = "JAN"; break;
+                case 1: monthEng = "FEB"; break;
+                case 2: monthEng = "MAR"; break;
+                case 3: monthEng = "APR"; break;
+                case 4: monthEng = "MAY"; break;
+                case 5: monthEng = "JUN"; break;
+                case 6: monthEng = "JUL"; break;
+                case 7: monthEng = "AUG"; break;
+                case 8: monthEng = "SEPT"; break;
+                case 9: monthEng = "OCT"; break;
+                case 10: monthEng = "NOV"; break;
+                case 11: monthEng = "DEC"; break;
+                default: monthEng = "JAN"; break;
+            }
+            const share = (amt / friendList.length).toFixed(2);
+            const obj = {
+                id: Math.round(Math.random() * 10000000),
+                expenseName: desc,
+                payer: payer,
+                payerAmount: amt,
+                share: payer !== "Swapnil" ? (-share) : (share * (friendList.length - 1)),
+                dateMonth: monthEng,
+                dateDate: day
+            }
+            props.addition(obj);
 
-        setFriendList(prevValue => {
-            return prevValue.filter((item) => {
-                console.log(item.share)
-                if (item.name === payer) {
-                    item.share = Number(item.share)+Number(([share * (friendList.length - 1)]));
-                    console.log("share = "+item.share)
-                }
-                else {
-                    item.share -= [share];
-                }
-                console.log(item.share)
-                return true;
+            setFriendList(prevValue => {
+                return prevValue.filter((item) => {
+                    console.log(item.share)
+                    if (item.name === payer) {
+                        item.share = Number(item.share) + Number(([share * (friendList.length - 1)]));
+                        console.log("share = " + item.share)
+                    }
+                    else {
+                        item.share -= [share];
+                    }
+                    console.log(item.share)
+                    return true;
+                })
             })
-        })
-        console.log(friendList);
-        document.getElementById("expense-desc").value = "";
-        document.getElementById("expense-amt").value = "";
-        setIsActive(false)
+            console.log(friendList);
+            document.getElementById("expense-desc").value = "";
+            document.getElementById("expense-amt").value = "";
+            setIsActive(false)
+        }
     }
 
     function createPayer(props) {

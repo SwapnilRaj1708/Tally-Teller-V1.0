@@ -1,12 +1,13 @@
 import React from 'react';
-import "./Navbar.css"
+import "./Navbar.css";
+import logo from "./logo.png"
 
 export default function Navbar() {
 
     return (
         <div className="navbar navbar-expand-lg navbar-dark" aria-label="Eighth navbar example">
             <div className="container">
-                <a className="navbar-brand" href="/">TallyTeller</a>
+                <a className="navbar-brand" href="/"><div className="brand-logo"><img className="logo" src={logo} alt="logo" /><span>TallyTeller</span></div></a>
                 <button className="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>

@@ -1,0 +1,8 @@
+.optsection{
+    display: flex;
+    justify-content: center;
+    width: 158px;
+    margin-top: 56px;
+    margin-left: 100px;
+    /* background-color: aliceblue; */
+}

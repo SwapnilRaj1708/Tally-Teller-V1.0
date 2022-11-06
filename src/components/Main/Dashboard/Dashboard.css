@@ -1,0 +1,19 @@
+.dashboard {
+    background-color: whitesmoke;
+    width: 538px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+.default-expense{
+    justify-content: center !important;
+    align-items: center !important;
+    font-size: larger;
+}
+/* @media screen and (max-width: 960px) {
+    .dashboard{
+        width: 480px;
+    }
+} */

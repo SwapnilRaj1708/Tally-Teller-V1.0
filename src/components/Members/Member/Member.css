@@ -1,0 +1,38 @@
+.member {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    line-height: 1.2;
+
+}
+
+.member-name {
+    font-size: large;
+    font-weight: 600;
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.member-cond {
+    font-size: smaller;
+    font-weight: 450;
+    white-space: nowrap;
+}
+
+.member-amount {
+    font-size: large;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.member div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3px;
+}

@@ -1,0 +1,97 @@
+.header{
+
+    background-color: #d3d3d3;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 24px;   
+    width:100%; 
+}
+.header-outer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.group-heading{
+    text-shadow: 1px 1px grey;
+    font-size: xx-large;
+}
+.tally-buttons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.add-expenses{
+    background-color: orange;
+}
+.settle-up{
+    background-color: rgb(47, 255, 71);
+}
+.add-expense{
+    background-color: white;
+    position: absolute;
+    width: 376px;
+    top: 100px;
+    flex-direction: column;
+    border-radius: 10px;
+    /* overflow-x: hidden; */
+}
+.hide-expense{
+    display: none !important;
+}
+.centered{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.add-expense div{
+    width: 100%;
+}
+.add-expense .header-container{
+    background-color: #48be9d;
+    border-radius: 10px 10px 0 0;
+
+}
+.expense-container{
+    padding: 15px 0;
+    gap: 10px;
+}
+.expense-container .enter-description{
+    width: 80%;
+}
+.expense-container .enter-description input{
+    width: 100%;
+    border-radius: 6px;
+    background-color: whitesmoke;
+
+}
+.expense-container .enter-amount{
+    width: 50%;
+}
+.expense-container .enter-amount input{
+    border-radius: 6px;
+    background-color: whitesmoke;
+    width: 80%;
+}
+.amount-container{
+    gap: 10px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.button-container{
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    padding: 15px;
+    gap: 10px;
+}
+.form-select{
+    width: 50%;
+}

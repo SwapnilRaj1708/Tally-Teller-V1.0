@@ -1,0 +1,22 @@
+.members{
+    /* background-color: yellow; */
+    /* position: fixed; */
+    margin-top: 56px;
+    margin-right: 90px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 158px;
+    align-items: center;
+    /* padding-top: 70px; */
+}
+.sticky-div{
+    position: sticky;
+    top: 56px;
+}
+.members p{
+    width: 100%;
+    text-align: start;
+    font-size: x-large;
+    font-weight: 500;
+}

@@ -1,3 +1,9 @@
+.navbar-brand{
+    font-family: 'Kalam', cursive;
+    font-weight: 400;
+}
 .navbar{
     position: fixed;
+    width: 100vw;
+    background-color: #48be9d;
 }

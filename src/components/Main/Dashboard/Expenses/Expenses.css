@@ -1,0 +1,121 @@
+.expense {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 55px;
+    border: 1px solid #adadad;
+    font-family: 'Lato', sans-serif;
+}
+
+.datestamp {
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+
+}
+
+.datestamp .month {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+    width: 100%;
+}
+.datestamp .date{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    width: 100%;
+}
+.expense-name {
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    width: calc(100% - 235px);
+    padding: 0 10px;
+    font-weight: 700;
+}
+.expense-name span{
+    white-space: nowrap;
+    width: 240px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.payer-detail {
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    padding: 0 5px;
+}
+
+.payer-detail .name,
+.payer-detail .amount {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 3px;
+}
+.payer-detail .amount{
+    font-weight: 700;
+    color: black;
+}
+.payer-detail .name :nth-child(1){
+    white-space: nowrap;
+    /* width: 300px; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.your-share {
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    width: 110px;
+    padding: 0 5px;
+}
+
+.your-share .name,
+.your-share .amount {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    white-space: nowrap;
+}
+.your-share .amount{
+    font-weight: 700;
+}
+.profit{
+    color: rgb(47, 255, 71);
+}
+.loss{
+    color: orange;
+}

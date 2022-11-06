@@ -2,11 +2,12 @@
     padding-top: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     gap: 5px;
     background-color: whitesmoke;
     width: 75px;
     height: calc(100vh - 56px);
     position: fixed;
+    top: 56px;
 }

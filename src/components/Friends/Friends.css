@@ -2,10 +2,11 @@
     padding-top: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     gap: 5px;
     position: fixed;
+    top: 56px;
     right: 0;
     background-color: whitesmoke;
     width: 65px;
